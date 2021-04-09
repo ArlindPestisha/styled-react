@@ -2,7 +2,7 @@ import styled from "styled-components";
 // Import link Router as alias LinkR
 import { Link as LinkR } from "react-router-dom";
 //Import Link scroll as alias LinkS
-import { Link as LinkS } from 'react-scroll'
+import { Link as LinkS } from "react-scroll";
 
 //This is for the Nav big container
 export const Nav = styled.nav`
@@ -44,7 +44,6 @@ export const NavLogo = styled(LinkR)`
   text-decoration: none;
 `;
 
-
 //Burger menu icon
 export const MobileIcon = styled.div`
   display: none;
@@ -72,11 +71,11 @@ export const NavMenu = styled.ul`
   @media screen and (max-width: 768px) {
     display: none;
   }
-`
+`;
 //Items on the List
 export const NavItem = styled.li`
   height: 80px;
-`
+`;
 export const NavLinks = styled(LinkS)`
   color: white;
   display: flex;
@@ -89,5 +88,34 @@ export const NavLinks = styled(LinkS)`
   &.active {
     border-bottom: 3px solid #01bf71;
   }
+`;
+//Button div
+export const NavBtn = styled.nav`
+  display: flex;
+  align-items: center;
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+`;
+
+//Button which using the react router
+export const NavBtnLink = styled(LinkR)`
+  border-radius: 50px;
+  background: #01bf71;
+  white-space: nowrap;
+  padding: 10px 20px;
+  color: #010606;
+  font-size: 16px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+
+  &::hover {
+    transition: all 0.2s ease-in-out;
+    background: #fff;
+    color: #010606;
+  }
 `
- 

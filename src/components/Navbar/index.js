@@ -7,6 +7,8 @@ import {
   NavMenu,
   NavItem,
   NavLinks,
+  NavBtn,
+  NavBtnLink
 } from "./NavBarElemenst";
 
 const Navbar = () => {
@@ -24,7 +26,21 @@ const Navbar = () => {
             <NavItem>
               <NavLinks to="about">About</NavLinks>
             </NavItem>
+            <NavItem>
+              <NavLinks to="discover">Discover</NavLinks>
+            </NavItem>
+            <NavItem>
+              <NavLinks to="services">Services</NavLinks>
+            </NavItem>
+            <NavItem>
+              <NavLinks to="signup">Sign Up</NavLinks>
+            </NavItem>
           </NavMenu>
+          {/* This is basicly a div to wrap the button */}
+          <NavBtn>
+            {/* This use react router to go to the sign in form(page) */}
+            <NavBtnLink to='singin'>Sign in</NavBtnLink>
+          </NavBtn>
         </NavbarContainer>
       </Nav>
     </>
