@@ -9,7 +9,7 @@ import {
   NavLinks,
   NavBtn,
   NavBtnLink
-} from "./NavBarElemenst";
+} from "./NavBarElement";
 
 const Navbar = () => {
   return (
